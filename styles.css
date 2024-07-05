@@ -30,7 +30,7 @@ nav{
 }
 
 .navigation_bar {
-    background-color: rgba(255, 255, 255, 0.833); /* Transparent white */
+    background-color: rgba(255, 255, 255);  /*0.833*//* Transparent white */
     padding: 15px 25px; 
     position: fixed; 
     width: 100%; /* Full width */
@@ -60,6 +60,15 @@ nav img{
     display: inline-block;
 }
 
+.navbar_link_dropdown{
+    flex: 1;
+    text-align: left;
+    padding-left: 0.3cm; 
+    color: #007ec2;
+    text-decoration: none;
+    display: inline-block;
+}
+
 .navbar_link::after{
     content: '';
     width: 0%;
@@ -69,10 +78,68 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
-
+ 
 .navbar_link:hover::after{
     width: 100%;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    padding: 50px; 
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    color:#1A1E41;
+    border-radius: 9px;
+    width: 100%;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: #007ec2;
+    color: #fff;
+}
+
+.navbar_link_dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* NAVBAR DETAILS SECTION DESIGN CSS */
+
+.menu-dropdown-column{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.menu-dropdown-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-vertical-line{
+    border-left: 1px solid #007ec2;
+    height:auto;
+}
+
+.nav-details {
+    color: #1a1e41bb;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+/* Contact Button */
 
 .contact_button {
     background-color: transparent; 
@@ -169,7 +236,6 @@ nav img{
         top: 15px;
         right: 15px;
         z-index: 3;
-        padding: 5%;
     }
 
     .menu-icon{
@@ -182,6 +248,27 @@ nav img{
         right: 15px;
         z-index: 3;
     }
+
+    /* FIXING THE MENU BAR FOR MOBILE */
+    .nav-details{
+        display: none;
+    }
+
+    .nav-vertical-line{
+        display: none;
+    }
+
+    .menu-dropdown-column{
+        width: 100%;
+        padding: 1px;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        padding: 12px; 
+    }    
 }
 
 /* ///////// FOOTER //////// */

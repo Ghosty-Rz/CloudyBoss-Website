@@ -10,3 +10,22 @@ const mobileMenu = () => {
 
 menuIcon.addEventListener('click', mobileMenu);
 closeIcon.addEventListener('click', mobileMenu);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.dropdown-link');
+    const detailSections = document.querySelectorAll('.detail-section');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const target = this.getAttribute('data-detail');
+            detailSections.forEach(section => {
+                if (section.id === target) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        });
+    });
+});
