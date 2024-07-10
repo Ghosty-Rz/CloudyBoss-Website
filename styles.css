@@ -218,7 +218,7 @@ nav img{
         width: 200px;
         height: 100vh;
         background: #007ec2;
-        z-index: 2;
+        z-index: 100;
         padding-top: 10px; 
         text-decoration: none;
         transition: 1s;
@@ -757,5 +757,27 @@ hr{
     text-align: left;
     margin-left: 20px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 700px){
+    .technologies-header h1{
+        font-size: 40px;
+    }
+
+    .technologies-header p{
+        width: 90%;
+    }
+
+    .technologies-cards{
+        display: table-column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .technology-card{
+        width: 90%;
+        margin: 20px;
+
+    }
 }
 
