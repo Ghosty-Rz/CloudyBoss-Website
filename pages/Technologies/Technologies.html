@@ -17,9 +17,10 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navigation_bar">
     
+    <!-- NAVBAR -->
+
+    <nav class="navigation_bar">
         <a href="/index.html"><img src="/images/a_cblogo1.png" alt="Company Logo"></a>
         
         <!-- NAVIGATION BAR MENU -->
@@ -38,19 +39,37 @@
                         <div class="menu-dropdown-row">
                             <div class="menu-dropdown-column">
                                 <div class="dropdown-links">
-                                    <a href="/pages/Technologies/Keystone.html" class="dropdown-link" data-detail="keystone">Keystone</a>
-                                    <a href="#" class="dropdown-link" data-detail="3-horizons">3-horizons</a>
-                                    <a href="#" class="dropdown-link" data-detail="skye-dlt">SKYE DLT</a>
-                                    <a href="#" class="dropdown-link" data-detail="our-stack">Our stack</a>
-                                    <a href="#" class="dropdown-link" data-detail="qalot">QAlot</a>
+                                    <a href="Keystone.html" class="dropdown-link" data-detail="keystone">Keystone</a>
+                                    <a href="/" class="dropdown-link" data-detail="3-horizons">3-horizons</a>
+                                    <a href="/" class="dropdown-link" data-detail="skye-dlt">SKYE DLT</a>
+                                    <a href="/" class="dropdown-link" data-detail="our-stack">Our stack</a>
+                                    <a href="/" class="dropdown-link" data-detail="qalot">QAlot</a>
                                 </div>
                             </div>
 
                             <div class="nav-vertical-line"></div>
 
                             <div class="menu-dropdown-column">
-                                <div class="nav-details">
+                                <!-- Detail sections for each item -->
+                                <div class="nav-details" id="keystone-details">
                                     <header>Keystone is this and that</header>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                </div>
+                                <div class="nav-details" id="3-horizons-details">
+                                    <header>3-horizons is this and that</header>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                </div>
+                                <div class="nav-details" id="skye-dlt-details">
+                                    <header>skye dlt is this and that</header>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                </div>
+                                <div class="nav-details" id="our-stack-details">
+                                    <header>our stack is this and that</header>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                </div>
+                                <div class="nav-details" id="qalot-details">
+                                    <header>qalot is this and that</header>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                                 </div>
                             </div>
                         
@@ -68,9 +87,9 @@
                         <div class="menu-dropdown-row">
                             <div class="menu-dropdown-column">
                                 <div class="dropdown-links">
-                                    <a href="#" class="dropdown-link" data-detail="keystone">Multi-cloud hosting</a>
-                                    <a href="#" class="dropdown-link" data-detail="3-horizons">Pro-services</a>
-                                    <a href="#" class="dropdown-link" data-detail="skye-dlt">NEXT+ SaaS</a>
+                                    <a href="#" class="dropdown-link" data-detail="multi-cloud-hosting">Multi-cloud hosting</a>
+                                    <a href="#" class="dropdown-link" data-detail="pro-services">Pro-services</a>
+                                    <a href="#" class="dropdown-link" data-detail="next+saas">NEXT+ SaaS</a>
                                 </div>
                             </div>
 
@@ -94,11 +113,11 @@
                         <div class="menu-dropdown-row">
                             <div class="menu-dropdown-column">
                                 <div class="dropdown-links">
-                                    <a href="#" class="dropdown-link" data-detail="keystone">GRIP</a>
-                                    <a href="#" class="dropdown-link" data-detail="3-horizons">APEASE</a>
-                                    <a href="#" class="dropdown-link" data-detail="skye-dlt">D.OT</a>
-                                    <a href="#" class="dropdown-link" data-detail="our-stack">Advancity</a>
-                                    <a href="#" class="dropdown-link" data-detail="qalot">Stratospheric</a>
+                                    <a href="#" class="dropdown-link" data-detail="grip">GRIP</a>
+                                    <a href="#" class="dropdown-link" data-detail="apease">APEASE</a>
+                                    <a href="#" class="dropdown-link" data-detail="d-ot">D.OT</a>
+                                    <a href="#" class="dropdown-link" data-detail="advancity">Advancity</a>
+                                    <a href="#" class="dropdown-link" data-detail="stratospheric">Stratospheric</a>
                                 </div>
                             </div>
 
@@ -115,7 +134,7 @@
                 </div>
 
                 <!-- ABOUT US TOGGLE -->
-                    <a href="AboutUs.html" class="navbar_link">About Us</a>
+                    <a href="/pages/AboutUs.html" class="navbar_link">About Us</a>
 
             </div>
                 <div class="contactbutton-container">
@@ -125,9 +144,8 @@
             </div>
 
             <div class="menu-icon" id="menu-icon"">&#9776;</div>
-        
-    </nav>
-    
+
+        </nav>
        
     <!-- PAGE HEADER -->
 <section class="technologies-header">
@@ -236,7 +254,7 @@
     </footer>
 </section>
 
-<script src="app.js"></script>
+<script src="/app.js"></script>
 
 
 </body>

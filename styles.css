@@ -123,7 +123,7 @@ nav img{
 /* NAVBAR DETAILS SECTION DESIGN CSS */
 
 .menu-dropdown-column{
-    width: 25%;
+    width: 30%;
     padding: 0 15px;
 }
 
@@ -138,12 +138,23 @@ nav img{
 }
 
 .nav-details {
-    color: #1a1e41bb;
-    font-weight: 400;
-    font-size: 30px;
-    margin-left: 20px;
+    display: none;
+    width: 100%;
 }
 
+.nav-details header{
+    font-size: 25px;
+    margin-left: 10px;
+    color: #1A1E41;
+    font-weight: 400;
+}
+
+.nav-details p{
+    width: 100%;
+}
+.nav-details.active {
+    display: block;
+}
 /* Contact Button */
 
 .contactbutton-container{
@@ -556,7 +567,7 @@ ul{
 
 .footer{
     background-color: #1A1E41;
-    padding: 70px 0;
+    padding: 10px 0;
 }
 
 .footer-col{
@@ -637,7 +648,7 @@ hr{
     width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .copyrights{
@@ -780,4 +791,47 @@ hr{
 
     }
 }
+
+.keystone-header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(220, 231, 255, 0.714),rgba(225, 231, 255, 0.7)),url(/images/myriam-jessier-eveI7MOcSmw-unsplash.jpg);
+    background-position: center;
+    background-size:cover;
+    /* top: 30%;
+    left: 50%; */
+    
+}
+
+.keystone-header img{
+    margin-top: 150px;
+    margin-left: 70px;
+}
+
+.keystone-header p{
+    font-size: medium;
+    color: #1A1E41;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 40%;
+}
+
+.Keystone-explanation{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+
+    padding-bottom: 300px;
+}
+
+.keystone-statistics{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+
 
