@@ -163,18 +163,26 @@ nav img{
 }
 
 .contact_button {
-    background-color: transparent; 
-    color: #007ec2; 
+    background-color: #007ec2; 
+    color: #fff; 
     padding: 10px 20px; /* Button padding */
     text-decoration: none; /* to Remove underline */
-    border: 2px solid #007ec2;
+    border: 2px solid #fff;
     border-radius: 5px; /* Rounded corners */
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
 .contact_button:hover {
-    background-color: #007ec2;
-    color: #fff;
+    background-color: #fff;
+    color: #007ec2;
+}
+
+.contactbutton-mobile{
+    display: none;
 }
  /* TOP OF THE HERO SECTION */
 .text_box {
@@ -292,6 +300,32 @@ nav img{
         width: 100%;
         padding: 12px; 
     }    
+
+    /* Contact Button Mobile */
+.contactbutton-container{
+    display: none;
+}
+
+.contact_button{
+    display: none;
+}
+
+.contactbutton-mobile{
+    background-color: #007ec2;
+    padding: 20px;
+    border-radius: 40%;
+    border: 2px solid #fff;
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.contactbutton-mobile .fa-phone{
+    color: #fff;
+}
 }
 
 /* SERVICES OFFERED: HERO PAGE */
@@ -332,7 +366,7 @@ p{
     box-sizing: border-box;
 }
 
-h3{
+.first-section-col h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
@@ -392,12 +426,13 @@ h3{
 
 .layer h3{
     color: #fff;
-    margin-top: 10%;
+    margin-top: 30%;
     transition: 0.5s;
 }
 
 .layer:hover h3{
     color: #1A1E41;
+    display: none;
 }
 
 .layer p{
@@ -407,8 +442,29 @@ h3{
 
 .layer:hover p{
     color: #1A1E41;
+    display: none;
 }
 
+.layer a{
+    text-decoration: none;
+    background-color: #007ec2;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover a{
+    bottom: 50%;
+    opacity: 1;
+}
 /* Partners section: hero page */
 
 .partners-section{
@@ -832,6 +888,354 @@ hr{
     padding-top: 60px;
 }
 
+/* ////////   ESG    /////////*/
 
+.esg-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(220, 231, 255, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Q3CGPDBGSZAJBKOGIDVPA7DRJQ.jpg);
+    background-position: center;
+    background-size:cover;
+}
 
+.esg-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-left: 70px;
+    color:#1A1E41 ;
+}
 
+.esg-header p {
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #1A1E41;
+}
+
+.info p {
+    width: 90%;
+    font-size: 16px;
+    color:black ;
+    padding: 50px;
+    padding-left: 70px;
+    padding-bottom: 0%;
+}
+
+.statistics{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.esg-boxes p{
+    text-align: left;
+}
+.statistics h3{
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* /////////  SUPPLY CHAIN //////// */
+
+.supply-chain-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(220, 231, 255, 0.8),rgba(225, 231, 255, 0.1)),url(/images/iain-kennedy-hz74ZBiJdr8-unsplash.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.supply-chain-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-left: 70px;
+    color:#1A1E41 ;
+}
+
+.supply-chain-header p {
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ////////////  AI ERD  /////////// */
+
+/* .aierp-header {
+    width: 100vw;
+    height: 300px;
+    background-color: #1A1E41;
+    border-bottom-left-radius: 100% 300px;
+    border-bottom-right-radius: 100% 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+} */
+
+.aierp-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/pexels-tara-winstead-8386440.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.aierp-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-left: 70px;
+    color: #fff; ;
+}
+
+.aierp-header p {
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #fff;
+}
+
+.section-title-box{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+ /* CMS + E-COMMERCE SECTIONS */
+.cms, .e-commerce{
+    width: 100%;
+    height: auto;
+    background-color: #1A1E41;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.cms h3, .e-commerce h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 60px;
+    width: 32%;
+}
+
+.cms .nav-vertical-line, .e-commerce .nav-vertical-line{
+    border-left: 1px solid #fff;
+}
+
+.cms p, .e-commerce p{
+    color: #fff;
+    padding-left: 20px;
+    font-weight: 200;
+}
+
+ /* CRM + WORKFORCE MANAGEMENT SECTIONS */
+ .crm, .workforce-management{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.crm h3, .workforce-management h3{
+    color: #1A1E41;
+    font-weight: 300;
+    font-size: 60px;
+    width: 32%;
+}
+
+.crm .nav-vertical-line, .workforce-management .nav-vertical-line{
+    border-left: 1px solid #1A1E41;
+}
+
+.crm p, .workforce-management p{
+    color: #1A1E41;
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+/* ///////// CYBER SECURITY PAGE //////// */
+
+.cybersec-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/flyd-zAhAUSdRLJ8-unsplash.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.cybersec-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-left: 70px;
+    color: #fff;
+}
+
+.cybersec-header p{
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ////////// SDK & DEVTOOLS /////////// */
+
+.sdkdevtools-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between text and image */
+    padding: 20px;
+}
+
+.sdkdev-text h1{
+    width: 100%;
+    font-size: 70px;
+    padding-top: 100px;
+    padding-left: 70px;
+}
+
+.sdkdev-text p{
+    width: 100%;
+    padding-left: 73px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+}
+
+.sdkdevtools-header img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 100px;
+    padding-top: 50px;
+}
+
+.info h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 70px;
+    padding-left: 70px;
+    margin-bottom: -25px;
+}
+
+/* //////////// ABOUT US PAGE ////////////*/
+
+.aboutus-header{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 500px;
+}
+.circle{
+    width:35vw;
+    height: 35vw;
+    border-radius: 50%;
+    position: absolute;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.left {
+    left: -20vw;
+    background-color: #bbb;
+}
+
+.right {
+    right: -20vw;
+    background-color: #007ec2;
+}
+
+.aboutus-header-text{
+    width: 90%;
+    color: #1A1E41;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.aboutus-header h1{
+    font-size: 62px;
+}
+
+.our-offices{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.office-col{
+    flex-basis: 22%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+    aspect-ratio: 1/1;
+}
+
+.office-col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.country-layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.country-layer:hover{
+    background-color: #ffffff97;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.country-layer h3 , .country-layer p{
+    width: 100%;
+    color: #1A1E41;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.country-layer:hover h3{
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 49%;
+    opacity: 1;
+}
+
+.country-layer:hover p{
+    bottom: 39%;
+    opacity: 1;
+}
