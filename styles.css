@@ -229,12 +229,13 @@ nav img{
     .text_box h1{
         font-size: 40px;
     }
+
     .navbar_menu {
         display: block;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -250px;
+        width: 250px;
         height: 100vh;
         background: #007ec2;
         z-index: 100;
@@ -249,7 +250,13 @@ nav img{
     }
 
     .dropdown-content{
-        top: 60px;
+        display: none;
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+        max-height: 50vh; /* Set a max height for scrolling */
+        overflow-y: auto; /* Enable vertical scrolling */
     }
 
     .navbar_link {
@@ -260,7 +267,15 @@ nav img{
         text-decoration: none;
         transition: 1s;
     }
+
+    .navbar_link.active + .dropdown-content {
+        display: block;
+    }
    
+    .nav-details.nav-details.active{
+        display: none;
+    }
+
     .close-icon{
         display: block;
         cursor: pointer;
@@ -310,22 +325,28 @@ nav img{
     display: none;
 }
 
-.contactbutton-mobile{
+.contactbutton-mobile {
     background-color: #007ec2;
-    padding: 20px;
-    border-radius: 40%;
+    padding: 0 20px 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
     border: 2px solid #fff;
-    display: block;
+    display: flex; /* Change from block to flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     position: fixed;
     right: 30px;
     bottom: 30px;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
 
-.contactbutton-mobile .fa-phone{
+.contactbutton-mobile .fa-envelope {
     color: #fff;
+    font-size: 24px; /* Ensure the icon is properly sized */
 }
+
 }
 
 /* SERVICES OFFERED: HERO PAGE */
@@ -730,9 +751,699 @@ hr{
     }
 }
 
-/* ///////////////// TECHNOLOGY PAGE ////////////////// */
 
-/* header */
+/* --------------------------------- */
+/* //////////// PRODUCTS /////////// */
+/* --------------------------------- */
+
+
+/*************   ESG    **************/
+
+.esg-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(220, 231, 255, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Headers/Q3CGPDBGSZAJBKOGIDVPA7DRJQ.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.esg-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-left: 70px;
+    color:#1A1E41 ;
+}
+
+.esg-header p {
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #1A1E41;
+}
+
+.info p {
+    width: 90%;
+    font-size: 16px;
+    color:black ;
+    padding: 50px;
+    padding-left: 70px;
+    padding-bottom: 0%;
+}
+
+.statistics{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.esg-boxes p{
+    text-align: left;
+}
+.statistics h3{
+    text-align: left;
+    padding-left: 10px;
+}
+
+/*********** SUPPLY CHAIN ************/
+
+.supply-chain-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(220, 231, 255, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Headers/iain-kennedy-hz74ZBiJdr8-unsplash.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.supply-chain-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-left: 70px;
+    color:#1A1E41 ;
+}
+
+.supply-chain-header p {
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #fff;
+}
+
+@media (max-width: 700px){
+    .supply-chain-header h1{
+        width: auto;
+        font-size: 70px;
+        padding-left: 40px;
+    }
+    
+    .supply-chain-header p {
+        width: 100%;
+        padding-left: 44.5px;
+    }
+}
+
+/************  AI ERD  ************/
+
+.aierp-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Headers/pexels-tara-winstead-8386440.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.aierp-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-left: 70px;
+    color: #fff; ;
+}
+
+.aierp-header p {
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #fff;
+}
+
+.section-title-box{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+ /* CMS + E-COMMERCE SECTIONS */
+.cms, .e-commerce{
+    width: 100%;
+    height: auto;
+    background-color: #1A1E41;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.cms h3, .e-commerce h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 60px;
+    width: 32%;
+}
+
+.cms .nav-vertical-line, .e-commerce .nav-vertical-line{
+    border-left: 1px solid #fff;
+}
+
+.cms p, .e-commerce p{
+    color: #fff;
+    padding-left: 20px;
+    font-weight: 200;
+}
+
+ /* CRM + WORKFORCE MANAGEMENT SECTIONS */
+ .crm, .workforce-management{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.crm h3, .workforce-management h3{
+    color: #1A1E41;
+    font-weight: 300;
+    font-size: 60px;
+    width: 32%;
+}
+
+.crm .nav-vertical-line, .workforce-management .nav-vertical-line{
+    border-left: 1px solid #1A1E41;
+}
+
+.crm p, .workforce-management p{
+    color: #1A1E41;
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+@media (max-width: 700px){
+
+    .aierp-header h1{
+        width: auto;
+        font-size: 70px;
+        padding-left: 40px;
+    }
+    
+    .aierp-header p {
+        width: 100%;
+        padding-left: 44.5px;
+    }
+
+    .cms, .e-commerce{
+        width: 100%;
+        height: auto;
+        background-color: #1A1E41;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cms h3, .e-commerce h3{
+        font-size: 40px;
+    }
+    
+    .cms .nav-vertical-line, .e-commerce .nav-vertical-line{
+        display: none;
+    }
+
+    .crm, .workforce-management{
+        width: 100%;
+        height: auto;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .crm h3, .workforce-management h3{
+        font-size: 40px;
+    }
+    
+    .crm .nav-vertical-line, .workforce-management .nav-vertical-line{
+        display: none;
+    }
+}
+
+/*********** CYBER SECURITY PAGE **********/
+
+.cybersec-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Headers/flyd-zAhAUSdRLJ8-unsplash.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.cybersec-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-left: 70px;
+    color: #fff;
+}
+
+.cybersec-header p{
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #fff;
+}
+
+@media (max-width: 700px){
+    .cybersec-header h1{
+        width: auto;
+        font-size: 70px;
+        padding-left: 40px;
+    }
+    
+    .cybersec-header p {
+        width: 100%;
+        padding-left: 44.5px;
+    }
+}
+
+/************* SDK & DEVTOOLS *************/
+
+.sdkdevtools-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between text and image */
+    padding: 20px;
+}
+
+.sdkdev-text h1{
+    width: 100%;
+    font-size: 70px;
+    padding-top: 100px;
+    padding-left: 70px;
+}
+
+.sdkdev-text p{
+    width: 100%;
+    padding-left: 73px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+}
+
+.sdkdevtools-header img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 100px;
+    padding-top: 50px;
+}
+
+.info h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 70px;
+    padding-left: 70px;
+    margin-bottom: -25px;
+}
+
+@media (max-width: 700px){
+    .sdkdevtools-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure space between text and image */
+        padding: 10px;
+    }
+    
+    .sdkdev-text h1{
+        width: 100%;
+        font-size: 60px;
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+    
+    .sdkdev-text p{
+        width: 100%;
+        padding-left: 23px;
+        margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+        font-size: 18px;
+    }
+
+    .sdkdevtools-header img{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        object-fit: cover;
+        margin-right:0;
+        padding-top: 50px;
+    }
+
+    .info h3{
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 70px;
+        padding-left: 30px;
+        margin-bottom: -25px;
+    }
+
+    .info p{
+        padding-left: 40px;
+    }
+}
+
+/* --------------------------------- */
+/* //////////// SERVICES /////////// */
+/* --------------------------------- */
+
+/********* Technology services ******** */
+
+.techservices-header {
+    width: auto;
+    height: 300px;
+    background-color: #1A1E41;
+    border-bottom-left-radius: 100% 300px;
+    border-bottom-right-radius: 100% 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.techservices-header h1{
+    width: auto;
+    font-size: 60px;
+    padding-top: 12px;
+    color: #fff;
+}
+
+.techservices-header p{
+    width: auto;
+    margin: -5px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #fff;
+}
+
+/* custom-product-dev */
+
+.custom-product-dev{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    background-color: #1A1E41;
+    padding-bottom: 55px;
+}
+
+.services-sub-subsections-title{
+    color: #fff;
+    font-weight: 400;
+    font-size: 35px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.services-sub-subsections-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-wrapper{
+    padding: 5% 8%;
+}
+
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 42px;
+    gap: 30px;
+}
+
+.service-card{
+    height: auto;
+    width: 400px;
+    background-color: #2e346b;
+    padding: 3% 8%;
+    border-radius: 8px;
+}
+
+.service-card h2{
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.service-card p{
+    color: #bbb;
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.service-card:hover{
+    background: linear-gradient(90deg,#007ec2,#7482ff);
+    transform: translateY(-8px);
+}
+
+.service-card:hover p{
+    color: #fff;
+}
+
+.service-card:hover h2{
+    color: #1A1E41;
+}
+
+/* R&D Programs */
+
+.rd-programs .services-sub-subsections-title
+{
+    color: #1A1E41;
+    font-weight: 500;
+}
+
+.rd-programs{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 55px;
+}
+
+/* hosting-data-manag */
+
+.hosting-data-manag{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    background-color: #1A1E41;
+    padding-bottom: 55px;
+}
+
+@media (max-width: 1200px){
+    .service-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/*  Client Section  */
+
+.clients{
+    width: auto;
+    height: auto;
+    display: grid;
+    place-items: center;
+    padding-bottom: 40px;
+}
+
+.client-wrap{
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+.client-wrap h1{
+    font-size: 35px;
+    color: #007ec2;
+    padding: 30px;
+    padding-top: 70px;
+    justify-content: center;
+}
+
+.clients-in{
+    width: 100%;
+    height: auto;
+}
+
+.clients-in ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.clients-in ul li{
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.clients-in ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Link Section */
+
+.link-same-page{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.link-same-page h1{
+    color: #007ec2;
+}
+.section-link{
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 8%;
+    padding: auto;
+    border: 1px solid #007ec2;
+    padding: 20px;
+}
+
+.section-link a{
+    text-decoration: none;
+    justify-content: center;
+    color: #777;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.section-link:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+.section-link:active {
+    transform: translateY(0);
+}
+
+.prog-manag-services {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    padding-bottom: 55px;
+}
+
+.prog-manag-services .services-sub-subsections-title{
+    color: #1A1E41;
+}
+
+@media (max-width: 700px){
+    .service-cards{
+        grid-template-columns: repeat(1,1fr);
+    } 
+
+    .service-card{
+        height: auto;
+        width: auto;
+        background-color: #2e346b;
+        padding: 3% 8%;
+        border-radius: 8px;
+    }
+
+    .techservices-header h1{
+        width: auto;
+        font-size: 30px;
+        padding-top: 12px;
+        color: #fff;
+    }
+    
+    .techservices-header p{
+        width: auto;
+        margin: -5px 0; /* Adjust margin to reduce space between h1 and p */
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .client-wrap{
+        width: 80%;
+        height: auto;
+        text-align: center;
+    }
+
+    .client-wrap h1{
+        font-size: 30px;
+        color: #007ec2;
+        padding: 10px;
+        margin-left: -30px;
+        padding-top: 70px;
+        justify-content: center;
+    }
+
+    .clients-in {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 5 columns */
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .clients-in ul{
+        width: auto;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .clients-in ul li{
+        display: flex;
+        flex-direction: row;
+        width: 90px;
+        height: 40px;
+        position: relative;
+        cursor: pointer;
+        margin: 10px;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .link-same-page{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .link-same-page h1{
+        font-size: 30px;
+    }
+
+
+}
+
+/* ------------------------------------------------- */
+/* ///////////////// TECHNOLOGIES ////////////////// */
+/* ------------------------------------------------- */
+
+
+/* This part will probably not be used, it represents the
+technology page which doesn't exist anymore, jump directly to keystone */
+
 .technologies-header{
     width: 90%;
     color: #1A1E41;
@@ -848,10 +1559,12 @@ hr{
     }
 }
 
+/************** KEYSTONE  ************ */
+
 .keystone-header{
     min-height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(220, 231, 255, 0.714),rgba(225, 231, 255, 0.7)),url(/images/myriam-jessier-eveI7MOcSmw-unsplash.jpg);
+    background-image: linear-gradient(rgba(220, 231, 255, 0.714),rgba(225, 231, 255, 0.7)),url(/images/Headers/myriam-jessier-eveI7MOcSmw-unsplash.jpg);
     background-position: center;
     background-size:cover;
     /* top: 30%;
@@ -888,203 +1601,97 @@ hr{
     padding-top: 60px;
 }
 
-/* ////////   ESG    /////////*/
+@media (max-width: 700px){
+    .keystone-header img{
+        margin-top: 150px;
+        margin-left: 40px;
+        width: 270px;
+    }
+    
+    .keystone-header p{
+        font-size: medium;
+        color: #1A1E41;
+        margin-top: 20px;
+        margin-left: 30px;
+        width: auto;
+    }
+}
 
-.esg-header{
-    min-height: 60vh;
+/* ********* SKYE *********** */
+
+.skye-header{
+    min-height: 75vh;
     width: 100%;
-    background-image: linear-gradient(rgba(220, 231, 255, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Q3CGPDBGSZAJBKOGIDVPA7DRJQ.jpg);
-    background-position: center;
-    background-size:cover;
-}
-
-.esg-header h1{
-    width: 60%;
-    font-size: 100px;
-    padding-top: 100px;
-    padding-left: 70px;
-    color:#1A1E41 ;
-}
-
-.esg-header p {
-    width: 60%;
-    padding-left: 74.5px;
-    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
-    font-size: 18px;
-    color: #1A1E41;
-}
-
-.info p {
-    width: 90%;
-    font-size: 16px;
-    color:black ;
-    padding: 50px;
-    padding-left: 70px;
-    padding-bottom: 0%;
-}
-
-.statistics{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.esg-boxes p{
-    text-align: left;
-}
-.statistics h3{
-    text-align: left;
-    padding-left: 10px;
-}
-
-/* /////////  SUPPLY CHAIN //////// */
-
-.supply-chain-header{
-    min-height: 60vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(220, 231, 255, 0.8),rgba(225, 231, 255, 0.1)),url(/images/iain-kennedy-hz74ZBiJdr8-unsplash.jpg);
-    background-position: center;
-    background-size:cover;
-}
-
-.supply-chain-header h1{
-    width: 60%;
-    font-size: 100px;
-    padding-top: 100px;
-    padding-left: 70px;
-    color:#1A1E41 ;
-}
-
-.supply-chain-header p {
-    width: 60%;
-    padding-left: 74.5px;
-    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
-    font-size: 18px;
-    color: #fff;
-}
-
-/* ////////////  AI ERD  /////////// */
-
-/* .aierp-header {
-    width: 100vw;
-    height: 300px;
     background-color: #1A1E41;
-    border-bottom-left-radius: 100% 300px;
-    border-bottom-right-radius: 100% 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-} */
-
-.aierp-header{
-    min-height: 60vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/pexels-tara-winstead-8386440.jpg);
     background-position: center;
     background-size:cover;
 }
 
-.aierp-header h1{
-    width: 60%;
-    font-size: 100px;
-    padding-top: 100px;
-    padding-left: 70px;
-    color: #fff; ;
+.skye-header img{
+    margin-top: 140px;
+    margin-left: 70px;
 }
 
-.aierp-header p {
-    width: 60%;
-    padding-left: 74.5px;
-    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
-    font-size: 18px;
+.skye-header p{
+    font-size: medium;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 40%;
+}
+
+.technologies-sub .first-section-col{
+    background: #2e346b;
+}
+
+.technologies-sub .first-section-col h3{
     color: #fff;
 }
 
-.section-title-box{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 50px;
-}
-
- /* CMS + E-COMMERCE SECTIONS */
-.cms, .e-commerce{
-    width: 100%;
-    height: auto;
-    background-color: #1A1E41;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px;
-}
-
-.cms h3, .e-commerce h3{
+.technologies-sub .esg-boxes p{
     color: #fff;
-    font-weight: 300;
-    font-size: 60px;
-    width: 32%;
-}
-
-.cms .nav-vertical-line, .e-commerce .nav-vertical-line{
-    border-left: 1px solid #fff;
-}
-
-.cms p, .e-commerce p{
-    color: #fff;
-    padding-left: 20px;
     font-weight: 200;
 }
 
- /* CRM + WORKFORCE MANAGEMENT SECTIONS */
- .crm, .workforce-management{
-    width: 100%;
-    height: auto;
-    background-color: #f1f1f1;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px;
+.technologies-sub .fa-percent{
+    color: #fff;
 }
 
-.crm h3, .workforce-management h3{
-    color: #1A1E41;
-    font-weight: 300;
-    font-size: 60px;
-    width: 32%;
+@media (max-width: 700px){
+    .skye-header img{
+        margin-top: 140px;
+        margin-left: 40px;
+        width: 250px;
+    }
+    
+    .skye-header p{
+        font-size: medium;
+        color: #fff;
+        margin-top: 20px;
+        margin-left: 30px;
+        width: auto;
+    }
 }
 
-.crm .nav-vertical-line, .workforce-management .nav-vertical-line{
-    border-left: 1px solid #1A1E41;
-}
+/* *********** Anima *********** */
 
-.crm p, .workforce-management p{
-    color: #1A1E41;
-    padding-left: 20px;
-    font-weight: 300;
-}
-
-/* ///////// CYBER SECURITY PAGE //////// */
-
-.cybersec-header{
+.anima-header{
     min-height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/flyd-zAhAUSdRLJ8-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Headers/geometric-1732847_1280.jpg);
     background-position: center;
     background-size:cover;
 }
 
-.cybersec-header h1{
+.anima-header h1{
     width: 60%;
     font-size: 100px;
     padding-top: 100px;
     padding-left: 70px;
-    color: #fff;
+    color:#1fff ;
 }
 
-.cybersec-header p{
+.anima-header p {
     width: 60%;
     padding-left: 74.5px;
     margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
@@ -1092,46 +1699,132 @@ hr{
     color: #fff;
 }
 
-/* ////////// SDK & DEVTOOLS /////////// */
-
-.sdkdevtools-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensure space between text and image */
-    padding: 20px;
+@media (max-width: 700px){
+    .anima-header h1{
+        width: auto;
+        font-size: 70px;
+        padding-top: 100px;
+        padding-left: 40px;
+        color:#1fff ;
+    }
+    
+    .anima-header p {
+        width: auto;
+        padding-left: 44.5px;
+        margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+        font-size: 18px;
+        color: #fff;
+    }
 }
 
-.sdkdev-text h1{
+/* ********* NEXT + *********** */
+
+.nextplus-header{
+    min-height: 60vh;
     width: 100%;
-    font-size: 70px;
-    padding-top: 100px;
+    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Headers/keyboard-5017973_1280.jpg);   
+    background-position: bottom;
+    background-size:cover;
+}
+
+/* .nextplus-header hr{
+    border: 3px solid #007ec2;
+}  */
+
+.nextplus-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 120px;
     padding-left: 70px;
+    color:#1fff ;
 }
 
-.sdkdev-text p{
-    width: 100%;
-    padding-left: 73px;
+/* .nextplus-header img{
+    margin-top: 150px;
+    margin-left: 70px;
+} */
+
+.nextplus-header p {
+    width: 60%;
+    padding-left: 74.5px;
     margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
     font-size: 18px;
+    /* color: #1A1E41;
+    margin-top: 40px; */
+    color: #fff;
 }
 
-.sdkdevtools-header img{
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    margin-right: 100px;
-    padding-top: 50px;
+@media (max-width: 700px){
+    .nextplus-header h1{
+        width: 60%;
+        font-size: 80px;
+        padding-top: 120px;
+        padding-left: 40px;
+        color:#1fff ;
+    }
+    
+    .nextplus-header p {
+        width: 60%;
+        padding-left: 44.5px;
+        margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+        font-size: 18px;
+        /* color: #1A1E41;
+        margin-top: 40px; */
+        color: #fff;
+    }
 }
 
-.info h3{
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 70px;
+/* ******** Architecture ********* */
+
+.architecture-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 23, 73, 0.8),rgba(225, 231, 255, 0.1)),url(/images/Headers/software-657188_1280.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.architecture-header h1{
+    width: 60%;
+    font-size: 100px;
+    padding-top: 120px;
     padding-left: 70px;
-    margin-bottom: -25px;
+    color:#1fff ;
 }
 
-/* //////////// ABOUT US PAGE ////////////*/
+.architecture-header p {
+    width: 60%;
+    padding-left: 74.5px;
+    margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+    color: #fff;
+}
+
+@media (max-width: 700px){
+    .architecture-header h1{
+        width: auto;
+        font-size: 50px;
+        padding-top: 120px;
+        padding-left: 40px;
+        color:#1fff ;
+    }
+    
+    .architecture-header p {
+        width: auto;
+        padding-left: 44.5px;
+        margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+
+/* --------------------------------- */
+/* //////////// company PAGE ////////////*/
+/* --------------------------------- */
+
+
+/* ********** About Us ********* */
 
 .aboutus-header{
     width: 100%;
@@ -1146,6 +1839,7 @@ hr{
     position: fixed;
     transform: translateY(-50%);
     top: 50%;
+    z-index: -100;
 }
 
 .left {
@@ -1238,4 +1932,166 @@ hr{
 .country-layer:hover p{
     bottom: 39%;
     opacity: 1;
+}
+
+/* ********** News Center ********* */
+
+.arc {
+    width: 100%;
+    height: 55vh;
+    background: linear-gradient(rgba(0,23,73,0.8), rgba(225, 231, 255, 0.1)), url('/images/Headers/absolutvision-WYd_PkCa1BY-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 100% 50vh;
+    border-bottom-right-radius: 100% 50vh;
+}
+
+.news-header{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.news-header h1{
+    width: 50%;
+    font-size: 100px;
+    margin: 10px 0;
+    color: #1A1E41;
+}
+
+.news-header p{
+    width: 50%;
+    margin-top: -20px; /* Adjust margin to reduce space */
+    font-size: 16px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.news-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-description {
+    padding: 15px;
+}
+
+.news-description h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.news-description p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px){
+    .news-header h1{
+        width: auto;
+        font-size: 80px;
+        margin: 10px 0;
+        color: #1A1E41;
+    }
+    
+    .news-header p{
+        width: 50%;
+        margin-top: -20px; /* Adjust margin to reduce space */
+        font-size: 16px;
+    }
+}
+
+/* ----------------------------------- */
+/* //////////// CONTACT US /////////// */
+/* ----------------------------------- */
+
+.contactus-form-container{
+    width: 100%;
+    height: 100vh;
+    background: url(/images/contactUsBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    margin-top: 100px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #2e346b;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button{
+    padding: 10px;
+    background: transparent;
+    color: #007ec2;
+    font-weight: 450;
+    font-size: 18px;
+    border: 2px solid #007ec2;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover{
+    color: #fff;
+    background: #007ec2;
 }

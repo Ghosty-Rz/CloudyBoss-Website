@@ -1,0 +1,212 @@
+[
+    {
+        "image": "/images/NewsCenterImages/2023Ev5.jpg",
+        "title": "News Title 1",
+        "dateAndPlace": "1 & 2 Jun 2023 | Seoul (South-Korea)",
+        "description": "cloudyBoss exhibits, at Next Rise 2023 event, its latest SaaS and R&D solutions including its SKYE industrial blockchain protocol, KEYSTONE data engine, blockchain/AI-driven Enterprise Resource Management Platform NEXT+, as well as World-1st EdgeChain & SL-CHAIN platforms. The cloudyBoss team is located Booth 6-56, within the AI & Big Data track, COEX Exhibition Center in Gangnam-gu, Seoul, and look forward to walking you through cloudyBoss latest exciting innovations!"
+    },
+    {
+        "image": "/images/NewsCenterImages/2023Ev4.jpeg",
+        "title": "News Title 2",
+        "dateAndPlace": "17 Apr 2023 | Multiple Cities (South-Korea)",
+        "description": "cloudyBoss relentless efforts over the past 4 years in building stronger socio-economic bridges between 2 of the most innovative nations on Earth, bringing together & coordinating representatives from South Korean industries & institutions, Lithuanian Embassy in South-Korea, Klaipeda FEZ, Port Authority, University, Municipality and others, culminated in an exciting development in international relations between the 2 nations with a mission to South-Korea from a Lithuanian delegation of stakeholders, upon which concrete commercial and socio-economic ties are now being forged."
+    },
+    {
+        "image": "/images/NewsCenterImages/2023Ev3.jpeg",
+        "title": "News Title 3",
+        "dateAndPlace": "28 March 2023 | Klaipeda (Lithuania)",
+        "description": "Great presentation with visiting Prof. Miroslav Voznak, Top 2% World Scientist (Stanford classification) from VSB - Technical University of Ostrava, and follow-on meetup sharing ideas about quantum dual channel over 5G communications, cybersecurity, and insights on cloudyBoss Horizon-3 DNAQC R&D project (DNA-based quantum mass data storage, connection-less quantum communications & SKYE-based quantum error correction)."
+    },
+    {
+        "image": "/images/NewsCenterImages/2023Ev2.jpg",
+        "title": "News Title 4",
+        "dateAndPlace": "5 March 2023 | Central & Eastern Europe",
+        "description": "Sharing knowledge with next generations remains a core strategy and “raison d’être” for the cloudyBoss group, aligned with its distinct entrepreneurial ecosystem, away from top-down short-termism, and propelled by sustainable long-term goals spanning multiple generations. With this in mind, cloudyBoss co-founder Giovanni Di Noto renewed its collaboration with the succesful Women Go Tech accelerator program to support and foster more entrepreneurs and talented professionals joining the ITC industry."
+    },
+    {
+        "image": "/images/NewsCenterImages/2023Ev1.jpeg",
+        "title":"News Title 5",
+        "dateAndPlace": "28 Feb 2023 | Klaipeda (Lithuania)",
+        "description": "Roundtable with Lithuanian Maritime Cluster, Port of Klaipėda Authority, Klaipeda University and BEGA corporation exploring opportunities in the EUR 2b maritime Data Analytics market, part of a broader EUR 170b market, discussing data valuation, monetization, insurtech, digitalization cybersecurity, predictive maintenance, innovative asset management models and other use cases."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022Ev16.jpeg",
+        "title":"News Title 6",
+        "dateAndPlace": "8 Dec 2022 | Klaipeda (Lithuania)",
+        "description": "Sharing knowledge with next generations remains a core strategy and “raison d’être” for the cloudyBoss group, aligned with its distinct entrepreneurial ecosystem, away from top-down short-termism, and propelled by sustainable long-term goals spanning multiple generations. With this in mind, cloudyBoss UAB (Europe) launched the highly successful “Munches” (Mentorship Lunches) initiative in early December 2022 with partners Klaipeda University, Klaipeda Science and Technology Park & KUB'O Svetainė, with a view to mentor and strengthen the critical thinking skills, world views & hands-on knowledge in advanced technologies of next generations of entrepreneurs, engineers & scientists."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022Ev15.jpeg",
+        "title":"News Title 7",
+        "dateAndPlace": "1 Dec 2022 | Klaipeda (Lithuania)",
+        "description": "cloudyBoss co-founder Giovanni Di Noto joined the Klaipėda ID 'Meet the Business' event in Kultūros Fabrikas, contributing to panel discussion with fellow mentors Kristina Postornak, Sara Pavlova, Niels Claes & James Andrew Clarke, and answering questions from LCC International University, Klaipeda State University of Applied Sciences and EU-CONEXUS Klaipeda University students, entrepreneurs & professionals, who've travelled from the four corners of the planet to start their journey in Global Klaipeda."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022Ev14.jpeg",
+        "title":"News Title 8",
+        "dateAndPlace": "16 Nov 2022 | Klaipeda (Lithuania)",
+        "description": "Great meetup with an international cast of engineering talents working on advanced BIM & digital twin solutions in Klaipeda State University of Applied Sciences, with cloudyBoss co-founder Giovanni Di Noto sharing knowledge on deep techs, BIM, IoT and other topics."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022Ev12.jpeg",
+        "title":"News Title 9",
+        "dateAndPlace": "8 Oct 2022 | Graz (Austria)",
+        "description": "3 x cloudyBoss SKYE powered platforms (SL-CHAIN, 360CARE & NEXT+) are pre-selected to respond to urbanTech challenges in smart glass manufacturing, automated GDPR compliance for accountants and smart hospital."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022Ev11.png",
+        "title":"News Title 10",
+        "dateAndPlace": "8 Oct 2022 | Seoul (South-Korea)",
+        "description": "SKYE protocol first audited lab performance tests clock > 21,000 TPS (Transactions Per Second) over baseline IBM production cloud nodes, with full on-chain complex variable-size KEYSTONE data blocks. SKYE results exceed that of unchained high-throughput best banking networks, confirming SKYE as the fastest, safest & smartest industrial DLT protocol available. SKYE increasing performance with larger on-chain data blocks sets it as a de facto blockchain architecture for safe firmware-level occasionally connected IoT devices (wearables, mobility, logistics & other applications)."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022Ev10.jpg",
+        "title":"News Title 11",
+        "dateAndPlace":"3 Oct 2022 | Klaipeda (Lithuania)",
+        "description":"Portathon 2022 attracts more than 100 participants from 12 different countries organized into 20 teams. 3 out of 20 teams, including 2 x Portathon prize winners and a 3rd team whom won a client contract during the event, will join other start-ups at the upcoming Startospheric cohort 3 acceleration program."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022Ev8.jpg",
+        "title":"News Title 12",
+        "dateAndPlace":"3 Oct 2022 | Klaipeda (Lithuania)",
+        "description":"Portathon 2022 attracts more than 100 participants from 12 different countries organized into 20 teams. 3 out of 20 teams, including 2 x Portathon prize winners and a 3rd team whom won a client contract during the event, will join other start-ups at the upcoming Startospheric cohort 3 acceleration program."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022ev2.jpg",
+        "title": "News Title 13",
+        "dateAndPlace": "2 Oct 2022 | Seoul (South-Korea)",
+        "description": "cloudyBoss South Korea CEO Joshua Anthony participates to the NetZero meetup with IoT Tribe & Korea Accelerator Association in Seoul."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022ev9.jpg",
+        "title": "News 14",
+        "dateAndPlace": "24 Sep 2022 | Global (Online)",
+        "description": "cloudyBoss kicks off Startospheric cohort 3 together with global partner F6S."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022ev7.jpg",
+        "title": "News 15",
+        "dateAndPlace": "12 Sep 2022 | Melnrange (Lithuania)",
+        "description": "cloudyBoss & 12 other sponsors organize the fun-packed inaugural 2022 Surf2Startup event to provide participants with a taste of what it takes to tackle challenges, prepare aspiring entrepreneurs to the challenging Portathon 2022 hackathon event and Startospheric cohort 3 accelerator."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022ev3.jpg",
+        "title": "News 16",
+        "dateAndPlace": "8 Sep 2022 | Klaipeda (Lithuania)",
+        "description": "cloudyBoss group CEO Jonathan Hera kicks off a new technology season in the Baltics, as Guest of the vibrant IT community forum Commit, meetup no 28, explaining his plans to establish the “Silicon Dune of Europe” in the Baltics, a reference to the UNESCO-listed Curonian Spit dune adjacent to Klaipeda port city."
+    },
+    {
+        "image": "/images/NewsCenterImages/media6.png",
+        "title": "News 17",
+        "dateAndPlace": "24 Jun 2022 | Klaipeda (Lithuania)",
+        "description": "The second cohort of Blue Growth Leaders gain formal graduation via this pan-European (led by EU-CONEXUS Klaipeda University) program targeted to entrepreneurs, executives and policy-makers, with cloudyBoss co-founder Giovanni Di Noto leading sessions on advanced technologies such as industrial DLT, IoT, AI & Quantum Computing."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022ev6.jpg",
+        "title": "News 18",
+        "dateAndPlace": "25 May 2022 | Online (Europe)",
+        "description": "cloudyBoss participates to EU-CONEXUS career forum."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022ev1.jpg",
+        "title": "",
+        "dateAndPlace": "15 May 2022 | Sydney (Australia)",
+        "description": "cloudyBoss picked as a Top Smart Contract company by CryptoPill."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022ev4.jpg",
+        "title": "",
+        "dateAndPlace": "15 May 2022 | Singapore / Tokyo (Japan)",
+        "description": "Moaah, a cloudyBoss Startospheric cohort 1 start-up led by CEO-founder Yun Sil Chu, secure major contracts with global logistics clients including one of the largest shipping companies in Japan, for its break-through AI-driven shipping due diligence API."
+    },
+    {
+        "image": "/images/NewsCenterImages/2022ev5.jpg",
+        "title": "",
+        "dateAndPlace": "17 Apr 2022 | Bangkok (Thailand)",
+        "description": "The cloudyBoss group releases the world-first distributed bottom-up values, driven by every participant within its ecosystems (vs traditional top-down values formulation driven by founders or top management)."
+    },
+    {
+        "image": "/images/NewsCenterImages/crypto.jpg",
+        "title": "",
+        "dateAndPlace": "23 Mar 2022 | Sydney (Australia)",
+        "description": "cloudyboss picked as a Top Blockchain company by CryptoPill."
+    },
+    {
+        "image": "/images/NewsCenterImages/medecsl.png",
+        "title": "",
+        "dateAndPlace": "10 Jan 2022 | Seoul (South-Korea)",
+        "description": "SecureLink Global chooses SKYE industrial DLT protocol to develop the seminal EdgeChain platform, set to shake-up the CyberSecurity landscape."
+    },
+    {
+        "image": "/images/NewsCenterImages/media20221",
+        "title": "",
+        "dateAndPlace": "8 Jan 2022 | Seoul (South-Korea)",
+        "description": "Public announcement of the official start to the long-term partnership between Wannabe Chain, a South Korean Blockchain firm based in Jeollanam-do (전라남도), which is adopting cB leading-edge SKYE industrial DLT protocol, alongside other break-through cloudyBoss technologies."
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    },
+    {
+        "image": "",
+        "title": "",
+        "dateAndPlace": "",
+        "description": ""
+    }
+]
