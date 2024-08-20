@@ -1935,7 +1935,7 @@ technology page which doesn't exist anymore, jump directly to keystone */
 
 /* ********** News Center ********* */
 
-.arc {
+/* .arc {
     width: 100%;
     height: 55vh;
     background: linear-gradient(rgba(0,23,73,0.8), rgba(225, 231, 255, 0.1)), url('/images/Headers/absolutvision-WYd_PkCa1BY-unsplash.jpg');
@@ -1965,10 +1965,176 @@ technology page which doesn't exist anymore, jump directly to keystone */
 .news-header p{
     width: 50%;
     margin-top: -20px; /* Adjust margin to reduce space */
+    /*font-size: 16px;
+} */
+
+/* Year Selector Styles */
+.year-selector {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.year-selector select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Popup Styles */
+.news-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.news-popup-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.news-popup-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.news-popup-content h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.news-popup-content p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.news-popup .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.news-popup .close:hover,
+.news-popup .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Additional Styles */
+.arc {
+    width: 100%;
+    height: 55vh;
+    background: linear-gradient(rgba(0,23,73,0.8), rgba(225, 231, 255, 0.1)), url('/images/Headers/absolutvision-WYd_PkCa1BY-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 100% 50vh;
+    border-bottom-right-radius: 100% 50vh;
+}
+
+.news-header {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.news-header h1 {
+    width: 50%;
+    font-size: 100px;
+    margin: 10px 0;
+    color: #1A1E41;
+}
+
+.news-header p {
+    width: 50%;
+    margin-top: -20px; /* Adjust margin to reduce space */
     font-size: 16px;
 }
 
 .news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.news-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-description {
+    padding: 15px;
+}
+
+.news-description h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.news-description p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .news-header h1 {
+        width: auto;
+        font-size: 80px;
+        margin: 10px 0;
+        color: #1A1E41;
+    }
+
+    .news-header p {
+        width: 50%;
+        margin-top: -20px; /* Adjust margin to reduce space */
+        font-size: 16px;
+    }
+}
+
+/* .news-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -2028,28 +2194,30 @@ technology page which doesn't exist anymore, jump directly to keystone */
     .news-header p{
         width: 50%;
         margin-top: -20px; /* Adjust margin to reduce space */
-        font-size: 16px;
+       /* font-size: 16px;
     }
-}
+} */
 
 /* ----------------------------------- */
 /* //////////// CONTACT US /////////// */
 /* ----------------------------------- */
 
-.contactus-form-container{
+.contactus-form-page{
     width: 100%;
     height: 100vh;
-    background: url(/images/contactUsBackground.jpg);
+    /* background: url(/images/ContactUsBackground.jpg);*/
+    /* background: linear-gradient(30deg, #1A1E41, #007BFF, #1fff); */
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 form{
     margin-top: 100px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -2093,4 +2261,142 @@ form button{
 form button:hover{
     color: #fff;
     background: #007ec2;
+}
+
+.company-info {
+    width: 45%; /*width for the map*/
+    /* background: #fff; */
+    padding: 2vw 4vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#map {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #e0e0e0; /* Placeholder background, replace with map */
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #007ec2;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+/*//////////////// PARTNERS ////////////////*/
+/* ---------------------------------------- */
+
+.partners-header {
+    display: flex;
+    justify-content: space-between; /* Ensure space between text and image */
+    /* border-bottom: solid 4px #ffd6e2; */
+    height: 550px;
+}
+
+.partners-text h1{
+    width: 100%;
+    font-size: 60px;
+    padding-left: 150px;
+    padding-top: 200px;
+}
+
+.partners-text p{
+    width: 100%;
+    padding-left: 153px;
+    margin: -5px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+}
+
+.partners-header img{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    object-fit:contain;
+    padding: 40px;
+    margin-top: -45px;
+}
+
+.page-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #ffd6e2;
+    padding: 20px 20px 50px 20px;
+}
+
+.partner-type-one {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 700px;
+}
+
+.partner-type-two {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px; 
+    height: 700px;
+}
+
+.partner-type-one h2, .partner-type-two h2{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.partner-type-one p, .partner-type-two p{
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+/* ****** B2B Partners ***** */
+.b2b-container .page-divider{
+    background-color: #fce0af;
+}
+
+/* ****** B2G Partners ***** */
+.b2g-container .page-divider{
+    background-color: #007ec2;
+}
+
+.b2gTitle{
+    color: #007ec2;
+}
+
+/* ******* Academic Partners ****** */
+.academic-part-container .page-divider{
+    background-color: #7482ff;
 }
