@@ -1818,6 +1818,96 @@ technology page which doesn't exist anymore, jump directly to keystone */
 }
 
 
+/* ---------------------------------------- */
+/*//////////////// PARTNERS ////////////////*/
+/* ---------------------------------------- */
+
+.partners-header {
+    display: flex;
+    justify-content: space-between; /* Ensure space between text and image */
+    /* border-bottom: solid 4px #ffd6e2; */
+    height: 550px;
+}
+
+.partners-text h1{
+    width: 100%;
+    font-size: 60px;
+    padding-left: 150px;
+    padding-top: 200px;
+}
+
+.partners-text p{
+    width: 100%;
+    padding-left: 153px;
+    margin: -5px 0; /* Adjust margin to reduce space between h1 and p */
+    font-size: 18px;
+}
+
+.partners-header img{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    object-fit:contain;
+    padding: 40px;
+    margin-top: -45px;
+}
+
+.page-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #ffd6e2;
+    padding: 20px 20px 50px 20px;
+}
+
+.partner-type-one {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 700px;
+}
+
+.partner-type-two {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px; 
+    height: 700px;
+}
+
+.partner-type-one h2, .partner-type-two h2{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.partner-type-one p, .partner-type-two p{
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+/* ****** B2B Partners ***** */
+.b2b-container .page-divider{
+    background-color: #fce0af;
+}
+
+/* ****** B2G Partners ***** */
+.b2g-container .page-divider{
+    background-color: #007ec2;
+}
+
+.b2gTitle{
+    color: #007ec2;
+}
+
+/* ******* Academic Partners ****** */
+.academic-part-container .page-divider{
+    background-color: #7482ff;
+}
+
+
 /* --------------------------------- */
 /* //////////// company PAGE ////////////*/
 /* --------------------------------- */
@@ -2080,7 +2170,7 @@ technology page which doesn't exist anymore, jump directly to keystone */
     cursor: pointer;
 }
 
-/* Additional Styles */
+
 .arc {
     width: 100%;
     height: 55vh;
@@ -2242,6 +2332,102 @@ technology page which doesn't exist anymore, jump directly to keystone */
     }
 } */
 
+/************* Organizational Values *************/
+
+.OrgValues-header .aboutus-header-text {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.OrgValues-header .aboutus-header-text p{
+    color: #f1f1f1;
+}
+
+.values-arc{
+    width: 100%;
+    height: 40vh;
+    background: #007ec2;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 100% 50vh;
+    border-bottom-right-radius: 100% 50vh;
+}
+
+.values-ethics-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 20px;
+}
+
+.values-ethics-content {
+    flex-basis: 60%;
+    padding-right: 20px;
+    padding-left: 120px;
+}
+
+.values-ethics-content h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    color: #fff;
+    background-color: #2e346b;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.values-ethics-content p {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.values-ethics-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values-ethics-content ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+.values-ethics-content ul li strong {
+    color: black;
+    padding-left: 80px;
+}
+
+.values-ethics-img {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.values-ethics-img img {
+    max-width: 500px;
+    height: 500px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .values-ethics-container {
+        flex-direction: column;
+    }
+
+    .values-ethics-content {
+        padding-right: 0;
+    }
+}
+
+
+
 /* ----------------------------------- */
 /* //////////// CONTACT US /////////// */
 /* ----------------------------------- */
@@ -2356,94 +2542,7 @@ form button:hover{
     text-decoration: underline;
 }
 
-/* ---------------------------------------- */
-/*//////////////// PARTNERS ////////////////*/
-/* ---------------------------------------- */
 
-.partners-header {
-    display: flex;
-    justify-content: space-between; /* Ensure space between text and image */
-    /* border-bottom: solid 4px #ffd6e2; */
-    height: 550px;
-}
-
-.partners-text h1{
-    width: 100%;
-    font-size: 60px;
-    padding-left: 150px;
-    padding-top: 200px;
-}
-
-.partners-text p{
-    width: 100%;
-    padding-left: 153px;
-    margin: -5px 0; /* Adjust margin to reduce space between h1 and p */
-    font-size: 18px;
-}
-
-.partners-header img{
-    width: 700px;
-    height: 700px;
-    display: flex;
-    object-fit:contain;
-    padding: 40px;
-    margin-top: -45px;
-}
-
-.page-divider {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-    background-color: #ffd6e2;
-    padding: 20px 20px 50px 20px;
-}
-
-.partner-type-one {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    height: 700px;
-}
-
-.partner-type-two {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px; 
-    height: 700px;
-}
-
-.partner-type-one h2, .partner-type-two h2{
-    text-align: center;
-    font-weight: 600;
-    padding-top: 20px;
-}
-
-.partner-type-one p, .partner-type-two p{
-    margin-top: 10px;
-    padding-left: 40px;
-}
-
-/* ****** B2B Partners ***** */
-.b2b-container .page-divider{
-    background-color: #fce0af;
-}
-
-/* ****** B2G Partners ***** */
-.b2g-container .page-divider{
-    background-color: #007ec2;
-}
-
-.b2gTitle{
-    color: #007ec2;
-}
-
-/* ******* Academic Partners ****** */
-.academic-part-container .page-divider{
-    background-color: #7482ff;
-}
 
 
 
