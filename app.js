@@ -67,7 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// ///////////
+///// NEWS CENTER ////////
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const newsContainer = document.getElementById('news-container');
     const prevPageButton = document.getElementById('prev-page');
@@ -79,38 +81,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupDescription = document.getElementById('popup-description');
     let currentPage = 1;
     const pageSize = 12;
-    let allNews = [];
 
-    const fetchNews = async () => {
-        try {
-            const response = await fetch('news.json');
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const data = await response.json();
-            return data;
-        } catch (error) {
-            console.error('Error fetching news:', error);
-            return [];
-        }
-    };
+    // Load news data from the inline script
+    const newsDataScript = document.getElementById('news-data');
+    const allNews = JSON.parse(newsDataScript.textContent);
 
     const renderNews = (news, page) => {
         newsContainer.innerHTML = '';
         const startIndex = (page - 1) * pageSize;
         const endIndex = startIndex + pageSize;
         const paginatedNews = news.slice(startIndex, endIndex);
-    
+
         paginatedNews.forEach(item => {
             const newsItem = document.createElement('div');
             newsItem.className = 'news-item';
-    
-            // Truncate description to show only a few lines
+
             const truncatedDescription = item.description.length > 100 ? item.description.substring(0, 100) + '...' : item.description;
-    
-            // Conditionally add the link if it exists
+
             const linkHTML = item.link ? `<a href="${item.link}" target="_blank">Follow Link</a>` : '';
-    
+
             newsItem.innerHTML = `
                 <img src="${item.image}" alt="News Image">
                 <div class="news-description">
@@ -119,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${linkHTML}
                 </div>
             `;
-    
+
             newsItem.addEventListener('click', () => {
                 popupTitle.textContent = item.dateAndPlace;
                 popupImage.src = item.image;
@@ -129,17 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
             newsContainer.appendChild(newsItem);
         });
     };
-    
-    
 
-    const loadNews = async () => {
-        allNews = await fetchNews();
+    const loadNews = () => {
         const years = Array.from(new Set(allNews.map(item => item.year))).sort().reverse();
 
-        // Populate the year selector with unique years
+        // Populate the year selector
         yearSelector.innerHTML = years.map(year => `<option value="${year}">${year}</option>`).join('');
         if (years.length > 0) {
-            displayNewsForYear(years[0]); // Display news for the latest year by default
+            displayNewsForYear(years[1]); // Display news for the latest year
         }
     };
 
@@ -163,26 +149,65 @@ document.addEventListener('DOMContentLoaded', () => {
         displayNewsForYear(yearSelector.value);
     });
 
-    // Event listener for year selector
     yearSelector.addEventListener('change', () => {
         displayNewsForYear(yearSelector.value);
     });
 
-    // Close the popup when the user clicks on <span> (x)
     document.querySelector('.news-popup .close').addEventListener('click', () => {
         newsPopup.style.display = 'none';
     });
 
-    // Close the popup when the user clicks anywhere outside of the modal
     window.addEventListener('click', (event) => {
         if (event.target === newsPopup) {
             newsPopup.style.display = 'none';
         }
     });
 
-    // Initial load
     loadNews();
 });
+
+
+///////////// Scrolling Animation //////////////
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hiddenSections = document.querySelectorAll(".hidden");
+
+    const revealSection = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Stop observing after it's visible
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(revealSection, {
+        threshold: 0.1, // Trigger when 10% of the section is visible
+    });
+
+    hiddenSections.forEach(section => observer.observe(section));
+});
+
+
+/********* Search Bar ***********/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+
+    searchButton.addEventListener("click", function () {
+        const query = searchInput.value.trim(); // Get the search query
+        if (query) {
+            // Redirect to the search results page with the query as a URL parameter
+            window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
+        } else {
+            alert("Please enter a search term.");
+        }
+    });
+});
+
+
+
 
 
 

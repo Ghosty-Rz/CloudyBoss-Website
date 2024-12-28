@@ -33,7 +33,7 @@
                 <div class="navbar_link_dropdown">
 
                     <!-- PRODUCTS TOGGLE -->
-                    <a href="/pages/Products/products.html" class="navbar_link">Products</a>
+                    <a href="pages/Products/products.html" class="navbar_link">Products</a>
                     <div class="dropdown-content">
                         <div class="menu-dropdown-row">
                             <div class="menu-dropdown-column">
@@ -125,10 +125,10 @@
                             <div class="menu-dropdown-column">
                                 <div class="dropdown-links">
                                     <a href="pages/Technologies/Keystone.html" class="dropdown-link" data-detail="keystone">KEYSTONE</a>
-                                    <a href="#" class="dropdown-link" data-detail="skye">SKYE</a>
-                                    <a href="#" class="dropdown-link" data-detail="anima">ANIMA</a>
-                                    <a href="#" class="dropdown-link" data-detail="next">NEXT+</a>
-                                    <a href="#" class="dropdown-link" data-detail="cybersec">Architecture</a>
+                                    <a href="pages/Technologies/skye.html" class="dropdown-link" data-detail="skye">SKYE</a>
+                                    <a href="pages/Technologies/anima.html" class="dropdown-link" data-detail="anima">ANIMA</a>
+                                    <a href="pages/Technologies/nextplus.html" class="dropdown-link" data-detail="next">NEXT+</a>
+                                    <a href="pages/Technologies/architecture.html" class="dropdown-link" data-detail="cybersec">Architecture</a>
                                 </div>
                             </div>
 
@@ -210,9 +210,9 @@
                             <div class="menu-dropdown-column">
                                 <div class="dropdown-links">
                                     <a href="pages/Company/AboutUs.html" class="dropdown-link" data-detail="aboutus">About Us</a>
-                                    <a href="#" class="dropdown-link" data-detail="values">Organizational Values</a>
-                                    <a href="#" class="dropdown-link" data-detail="careersinterships">Careers & Internships</a>
-                                    <a href="#" class="dropdown-link" data-detail="investors">For Investors</a>
+                                    <a href="pages/Company/OrganizationalValues.html" class="dropdown-link" data-detail="values">Organizational Values</a>
+                                    <a href="pages/Company/Careers&Internship.html" class="dropdown-link" data-detail="careersinterships">Careers & Internships</a>
+                                    <a href="pages/Company/ForInvestors.html" class="dropdown-link" data-detail="investors">For Investors</a>
                                     <a href="pages/Company/NewsCenter.html" class="dropdown-link" data-detail="news">News Center</a>
                                 </div>
                             </div>
@@ -249,33 +249,74 @@
                 
             </div>
 
-            <div class="contactbutton-container">
-                <a href="pages/ContactUs.html" class="contact_button">Contact Us</a>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search here..." />
+                <button id="search-button">Search</button>
             </div>
 
-            <div class="contactbutton-mobile">
-                <a href="pages/ContactUs.html">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-            </div>
-
-            </div>
-
-            <div class="menu-icon" id="menu-icon"">&#9776;</div>
+            
+            
+            <script>
+                // Script to handle search query submission
+                document.getElementById("search-button").addEventListener("click", function () {
+                    const query = document.getElementById("search-input").value.trim();
+                    if (query) {
+                        // Redirect to search results page with the query as a parameter
+                        window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
+                    } else {
+                        alert("Please enter a search term.");
+                    }
+                });
+            </script>
+            
 
         </nav>
+
+        <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search here..." />
+    <button id="search-button">Search</button>
+</div>
+
+<script>
+    // Script to handle search query submission
+    document.getElementById("search-button").addEventListener("click", function () {
+        const query = document.getElementById("search-input").value.trim();
+        if (query) {
+            // Redirect to search results page with the query as a parameter
+            window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
+        } else {
+            alert("Please enter a search term.");
+        }
+    });
+</script>
+
+
+<!------------- CONTACT US BUTTON ------------->
+        <div class="contactbutton-container">
+            <a href="pages/ContactUs.html" class="contact_button">Contact Us</a>
+        </div>
+
+        <div class="contactbutton-mobile">
+            <a href="pages/ContactUs.html">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        </div>
+
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
 
 
 <!---------- HEADER ------------------>
     <div class="text_box">
-        <h1>Now You Can<br>Play With The<br>Big Boys</h1>
+        <h1>Now You Can Play<br>With Big Boys</h1>
         <a href="" class="hero_btn">Explore Our Services</a>
     </div>
 </section>
 
 <!--------- Hero Section --------------->
 
-<section class="something-offered">
+<section class="something-offered hidden">
     <h1>What we offer</h1>
     <p>we might add a text here if wanted</p>
 
@@ -302,7 +343,7 @@
 </section>
 
 <!-- Our Partners -->
-<section class="partners-section">
+<section class="partners-section hidden" id="partners">
     <h1>Our Partners</h1>
     <div class="logos-slider">
         <div class="overflow">
@@ -353,7 +394,7 @@
 </section>
 <!-- 2nd Section -->
 
-<section class="second-section">
+<section class="second-section" id="services">
     <h1>Grow with us</h1>
     <p>Discover the programs and services we have</p>
 
@@ -389,7 +430,7 @@
 </section>
 
 <!-- 3rd SECTION -->
-<section class="third-section">
+<section class="third-section hidden">
     <h1>Third Section</h1>
     <p>Lorem ipsum dolor sit amet, consectetur</p>
 
@@ -414,7 +455,7 @@
 </section>
 
 <!-- Testimonials -->
-<section class="testimonials">
+<section class="testimonials hidden" id="testimonials">
     <h1>What Our Clients say</h1>
     <p>Lorem ipsum dolor sit amet, consectetur</p>
 
@@ -439,9 +480,8 @@
 <!-- CALL TO ACTION -->
 
 <section class="cta">
-    <h1>Call To Action</h1>
-    
-    <a href="/" class="contact_button">Contact Us</a>
+    <h1>Ready to take the next step with us ?</h1>
+    <a href="../../pages/ContactUs.html" class="cta-button">Contact Us</a>
 
 </section>
 
