@@ -189,22 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/********* Search Bar ***********/
 
-document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("search-input");
-    const searchButton = document.getElementById("search-button");
-
-    searchButton.addEventListener("click", function () {
-        const query = searchInput.value.trim(); // Get the search query
-        if (query) {
-            // Redirect to the search results page with the query as a URL parameter
-            window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
-        } else {
-            alert("Please enter a search term.");
-        }
-    });
-});
 
 
 

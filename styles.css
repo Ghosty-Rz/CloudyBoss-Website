@@ -2728,25 +2728,4 @@ form button:hover{
     transform: translateY(0);
 }
 
-#results-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
-.results-headline{
-    padding: 30PX;
-}
-
-#results-container a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-
-#results-container a:hover {
-    text-decoration: underline;
-}

@@ -249,46 +249,8 @@
                 
             </div>
 
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Search here..." />
-                <button id="search-button">Search</button>
-            </div>
-
-            
-            
-            <script>
-                // Script to handle search query submission
-                document.getElementById("search-button").addEventListener("click", function () {
-                    const query = document.getElementById("search-input").value.trim();
-                    if (query) {
-                        // Redirect to search results page with the query as a parameter
-                        window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
-                    } else {
-                        alert("Please enter a search term.");
-                    }
-                });
-            </script>
-            
-
         </nav>
 
-        <div class="search-bar">
-    <input type="text" id="search-input" placeholder="Search here..." />
-    <button id="search-button">Search</button>
-</div>
-
-<script>
-    // Script to handle search query submission
-    document.getElementById("search-button").addEventListener("click", function () {
-        const query = document.getElementById("search-input").value.trim();
-        if (query) {
-            // Redirect to search results page with the query as a parameter
-            window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
-        } else {
-            alert("Please enter a search term.");
-        }
-    });
-</script>
 
 
 <!------------- CONTACT US BUTTON ------------->
