@@ -156,7 +156,7 @@ nav img{
     display: block;
 }
 
-/* NAV SEARCH BAR */
+/* NAV SEARCH BAR */ /*removed, not possible for now*/
 
 .search-bar {
     display: flex;
@@ -257,7 +257,7 @@ nav img{
 }
 
 .menu-icon {
-    display: none;
+    display: block;
 }
 
 .close-icon {
@@ -689,6 +689,12 @@ p{
     background-color: #ddd;
     transform: scale(1.05);
 }
+
+@media (max-width: 700px){
+    .cta-button{
+        border: 1px solid #007BFF;
+    }
+}
 /* ///////// FOOTER //////// */
 
 .container{
@@ -799,14 +805,14 @@ hr{
     font-size: 12px;
 }
 
-@media(max-width: 767px){
+@media(max-width: 700px){
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
     }
 }
 
-@media(max-width: 574px){
+@media(max-width: 700px){
     .footer-col{
         width: 100%;
     }
@@ -1888,6 +1894,7 @@ technology page which doesn't exist anymore, jump directly to keystone */
 /* ---------------------------------------- */
 
 .partners-header {
+    width: 100%;
     display: flex;
     justify-content: space-between; /* Ensure space between text and image */
     /* border-bottom: solid 4px #ffd6e2; */
@@ -1970,6 +1977,71 @@ technology page which doesn't exist anymore, jump directly to keystone */
 /* ******* Academic Partners ****** */
 .academic-part-container .page-divider{
     background-color: #7482ff;
+}
+
+@media (max-width: 700px){
+    .partners-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure space between text and image */
+        padding: 10px;
+    }
+    
+    .partners-text h1{
+        width: 100%;
+        font-size: 60px;
+        padding-top: 70px;
+        padding-left: 15px;
+    }
+    
+    .partners-text p{
+        width: 100%;
+        padding-left: 18px;
+        margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+        font-size: 18px;
+    }
+
+    .partners-header img{
+        width: 350px;
+        height: 400px;
+        display: flex;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+        margin-right:0;
+        padding-top: 60px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    
+    .page-divider {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        background-color: #ffd6e2;
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+
+    .partner-type {
+        flex: 1 1 45%; /* Responsive scaling: Takes 45% width, adjusts on smaller screens */
+        max-width: 300px; /* Prevents oversized items */
+        text-align: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .partner-type-one {
+        height: 300px;
+    }
+    
+    .partner-type-two {
+        height: 300px;
+    }
+
 }
 
 
@@ -2093,19 +2165,24 @@ technology page which doesn't exist anymore, jump directly to keystone */
     margin-top: 100px;
 }
 
+
+
 .vision-container {
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.vision-content{
+.vision-content {
+    flex: 1;
+    text-align: left;
     height: 460px;
     background: #2e346b;
     padding: 30px;
-    max-width: 45.8%;
 }
 
 .vision-pic img {
@@ -2118,6 +2195,7 @@ technology page which doesn't exist anymore, jump directly to keystone */
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 15px;
+    padding: 10px;
 }
 
 .vision-content p {
@@ -2132,6 +2210,31 @@ technology page which doesn't exist anymore, jump directly to keystone */
     margin-top: -6px;
 }
 
+@media (max-width: 700px) {
+    .vision-container {
+        display: block; /* Stack content vertically */
+        width: 100%; /* Ensure container takes full width */
+    }
+
+    .vision-content {
+        width: 100%; /* Force content to take the full width */
+        text-align: center; /* Center-align text for better readability */
+        padding: 20px;
+    }
+
+    .vision-pic {
+        display: none; /* Hide the image */
+    }
+
+
+    .vision-content h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .vision-content p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+}
 /* ********** News Center ********* */
 
 /* .arc {
@@ -2358,71 +2461,15 @@ technology page which doesn't exist anymore, jump directly to keystone */
         margin-top: -20px; /* Adjust margin to reduce space */
         font-size: 16px;
     }
-}
 
-/* .news-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-.news-item {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #fff;
-}
-
-.news-item img {
-    width: 100%;
-    height: auto;
-}
-
-.news-description {
-    padding: 15px;
-}
-
-.news-description h2 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.news-description p {
-    margin: 10px 0 0;
-    color: #555;
-}
-
-.pagination {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.pagination a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.pagination a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 700px){
-    .news-header h1{
-        width: auto;
-        font-size: 80px;
-        margin: 10px 0;
-        color: #1A1E41;
+    .news-container {
+        column-count: 1; /* Number of columns */
+        column-gap: 20px; /* Space between columns */
+        padding: 20px;
     }
-    
-    .news-header p{
-        width: 50%;
-        margin-top: -20px; /* Adjust margin to reduce space */
-       /* font-size: 16px;
-    }
-} */
+}
+
+
 
 /************* Organizational Values *************/
 
@@ -2508,14 +2555,56 @@ technology page which doesn't exist anymore, jump directly to keystone */
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-    .values-ethics-container {
-        flex-direction: column;
-    }
+@media (max-width: 700px) {
 
-    .values-ethics-content {
-        padding-right: 0;
-    }
+        .aboutus-header-text p{
+            font-size: small;
+        }
+        .values-ethics-container{
+            width: 100%;
+            right: 0;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .values-ethics-content {
+            flex-basis: 100%;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .values-ethics-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .values-ethics-content ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #34495e;
+            padding-left: 10px;
+        }
+        
+        .values-ethics-content ul li strong {
+            color: black;
+            padding-left: 10px;
+        }
+        
+        .values-ethics-img {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            object-fit: cover;
+            text-align: center;
+            padding-left: 100px;
+        }
+        
+        .values-ethics-img img {
+            max-width: 300px;
+            height: 300px;
+            text-align: center;
+        }
+
 }
 
 /************** Career & Internships *************/
@@ -2551,6 +2640,37 @@ technology page which doesn't exist anymore, jump directly to keystone */
     color: #007ec2;
 }
 
+@media (max-width: 700px){
+    .CI-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure space between text and image */
+        padding: 10px;
+    }
+    
+    .CI-header h1{
+        width: 100%;
+        font-size: 60px;
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+    
+    .CI-header p{
+        width: 100%;
+        padding-left: 23px;
+        margin: -10px 0; /* Adjust margin to reduce space between h1 and p */
+        font-size: 18px;
+    }
+
+    .CI-header img{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        object-fit: cover;
+        margin-right:0;
+        padding-top: 50px;
+    }
+}
 /************** For Investors *************/
 
 .investing {
@@ -2712,6 +2832,40 @@ form button:hover{
 .social-links a:hover {
     text-decoration: underline;
 }
+
+
+@media (max-width: 700px) {
+    .contactus-form-page {
+        display: flex;
+        flex-direction: column; 
+        padding: 20px;
+        align-items: center; 
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        height: auto; 
+    }
+
+    form, .company-info {
+        margin-top: 20px; 
+        width: 90%;
+        max-width: 400px; /* Limit max width to prevent overflow */
+    }
+
+    #map {
+        width: 100%; 
+        height: 300px; 
+    }
+
+    .contact-details {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .social-links {
+        padding: 0;
+        margin: 10px auto;
+    }
+}
+
 
 
 

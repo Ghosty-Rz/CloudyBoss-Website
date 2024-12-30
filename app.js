@@ -196,6 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
 // For the News Center
 // document.addEventListener('DOMContentLoaded', () => {
 //     const newsContainer = document.getElementById('news-container');
@@ -261,3 +262,4 @@ document.addEventListener("DOMContentLoaded", () => {
 //     // Initial load
 //     loadNews();
 // });
+
